@@ -25,7 +25,7 @@ const prompt = PromptTemplate.fromTemplate(
   
 const chain = prompt.pipe(chatGroq);
 const output = await chain.invoke({
-output_language: "Arabic",
+output_language: "German",
 input: input,
 });
 return output.content as string
